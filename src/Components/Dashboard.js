@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import SectionMovies from "./SectionMovies";
 import FilterMovies from "./FilterMovies";
 import { store } from "../Store/StoreContext";
-import { getMovies } from "../Store/APIMocks";
+import { getMovies } from "../Store/API";
 
 function Dashboard() {
   const [isSeccionState, setIsSeccionState] = useState(false);
