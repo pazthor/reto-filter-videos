@@ -20,9 +20,10 @@ function FilterMovies({ movies }) {
   };
 
   const listMoviesComponent = (movies) => {
-    return movies.map((m) => {
+    return movies.map((m, index) => {
       return (
         <MovieCard
+        key={index}
           id={m.id}
           title={m.title}
           img={m.image_small}
