@@ -1,3 +1,6 @@
+## Descripción
+Este proyecto fue desarrollado  usando React  para crear el sitio y React Context para el manejo de estados, se evito usar redux para evitar agregar complejidad y tener un proyecto sin dependencias a otras bibliotecas.  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Para iniciar el proyecto
