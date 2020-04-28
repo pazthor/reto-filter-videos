@@ -1,10 +1,14 @@
 import React from 'react';
 
 import Dashboard from './Components/Dashboard';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-  <Dashboard />
+    <Container>      
+      <br/>
+      <Dashboard />
+    </Container>
   )
   ;
 }
