@@ -16,14 +16,13 @@ export const getListadoInfinito = (id) => {
 export const getMovies = async (categoria) => {
   const DTO = await getListadoInfinito(categoria);
   try {
-    const moduleArray = DTO.response.modules?.module;
+    const moduleArray = DTO.response.modules?.module;    
     const componentArray = moduleArray[0]?.components?.component;
     const listadoInfinitoDTO = componentArray.find(
       (p) => p.type === "Listadoinfinito"
     );
 
     const urlString = listadoInfinitoDTO?.properties.url;
-    console.log(urlString);
     const movies = await getMoviesList(urlString);
 
     return movies;
@@ -33,10 +32,9 @@ export const getMovies = async (categoria) => {
 };
 
 const getMoviesList = (url) => {
-  return FetchGet(`${URLS.getListMovies + url}`)
-    .then((res) => {
-      console.log(res.entry?.response?.groups);
-      return res.entry?.response.groups;
+  return FetchGet(`${URLS.getListMovies + url+URLS.getApi}`)
+    .then((res) => {      
+      return res.response?.groups;
     })
     .catch((err) => {
       console.log(err);
