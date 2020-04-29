@@ -1,5 +1,5 @@
 import React from "react";
-import { InputGroup, FormControl, Button, ListGroup } from "react-bootstrap";
+import {  ListGroup } from "react-bootstrap";
 
 function SectionMovies({ onClickCategoria }) {
   return (

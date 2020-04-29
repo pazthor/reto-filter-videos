@@ -31,17 +31,7 @@ export const getMovies = async (categoria) => {
   return movies;
 };
 
-const getMoviesList = (url) => {
-  return FetchGet(`${URLS.getListMovies + url}`)
-    .then((res) => {
-      console.log(res.entry?.response?.groups);
-      return res.entry?.response.groups;
-    })
-    .catch((err) => {
-      console.log(err);
-      return [];
-    });
-};
+
 
 const getMoviesMocks = () => {
   return [

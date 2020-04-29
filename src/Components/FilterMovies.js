@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { getMovieInfo } from "../Store/APIMocks";
 import SearchBar from "./SearchBar";
 import MovieCard from "./MovieCard";
-import { CardGroup, CardColumns } from "react-bootstrap";
+import {  CardColumns } from "react-bootstrap";
 import MovieInfoModal from "./MovieInfoModal";
 
 function FilterMovies({ movies }) {

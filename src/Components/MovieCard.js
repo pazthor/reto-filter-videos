@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Button } from "react-bootstrap";
+import {  Card, Button } from "react-bootstrap";
 
 function MovieCard({ id, title, img, description, handleMovieInfo }) {
   return (
