@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/35c35ab9-9d27-458c-a16a-b3ab193aa6d4/deploy-status)](https://app.netlify.com/sites/jolly-meitner-c9273f/deploys)
 ## Descripción
 Este proyecto fue desarrollado  usando React  para crear el sitio y React Context para el manejo de estados, se evito usar redux para evitar agregar complejidad y tener un proyecto sin dependencias a otras bibliotecas.  
 
